@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import CartPage from "./pages/CartPage";
 import ProductPage from "./pages/ProductPage";
+import CartIcon from "./components/CartIcon";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
               </li>
             </ul>
           </div>
+          <CartIcon />
         </nav>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/products" component={ProductsPage} />
