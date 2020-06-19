@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProductItem from "../components/ProductItem";
-import { FetchAllProducts } from "../api/FetchAllProducts";
+import { FetchAllProducts } from "../api/FetchApi";
 export default class ProductsPage extends Component {
   state = {
     allFetchedProductState: [],

@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import CartPage from "./pages/CartPage";
+import ProductPage from "./pages/ProductPage";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
@@ -44,10 +45,10 @@ function App() {
             </ul>
           </div>
         </nav>
-
         <Route exact path="/" component={HomePage} />
         <Route exact path="/products" component={ProductsPage} />
         <Route exact path="/cart" component={CartPage} />
+        <Route exact path="/products/:id" component={ProductPage} />
       </div>
     </Router>
   );
