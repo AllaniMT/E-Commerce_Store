@@ -1,7 +1,7 @@
 import React from "react";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Cart from "./pages/Cart";
+import HomePage from "./pages/HomePage";
+import ProductsPage from "./pages/ProductsPage";
+import CartPage from "./pages/CartPage";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
@@ -45,9 +45,9 @@ function App() {
           </div>
         </nav>
 
-        <Route exact path="/" component={Home} />
-        <Route exact path="/products" component={Products} />
-        <Route exact path="/cart" component={Cart} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/products" component={ProductsPage} />
+        <Route exact path="/cart" component={CartPage} />
       </div>
     </Router>
   );

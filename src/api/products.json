@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Audi",
+    "price": 100,
+    "image": "/images/1.jfif",
+    "description":
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
+  },
+  {
+    "id": 2,
+    "name": "Porsche",
+    "price": 150,
+    "image": "/images/2.png",
+    "description":
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
+  },
+  {
+    "id": 3,
+    "name": "Mercedes",
+    "price": 175,
+    "image": "/images/3.png",
+    "description":
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
+  },
+  {
+    "id": 4,
+    "name": "Volkswagen",
+    "price": 220,
+    "image": "/images/4.png",
+    "description":
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
+  },
+  {
+    "id": 5,
+    "name": "Renault",
+    "price": 165,
+    "image": "/images/5.png",
+    "description":
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
+  },
+  {
+    "id": 6,
+    "name": "Peugeot",
+    "price": 230,
+    "image": "/images/6.png",
+    "description":
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
+  }
+]
