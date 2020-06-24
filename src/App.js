@@ -4,7 +4,9 @@ import ProductsPage from "./pages/ProductsPage";
 import CartPage from "./pages/CartPage";
 import ProductPage from "./pages/ProductPage";
 import CartIcon from "./components/CartIcon";
+import store from "./store/store";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {Provider} from "react-redux";
 
 function App() {
   return (
@@ -56,4 +58,9 @@ function App() {
   );
 }
 
-export default App;
+function AppWithStore(){
+  return <Provider store={store}>
+    <App />
+  </Provider>
+}
+export default AppWithStore;
