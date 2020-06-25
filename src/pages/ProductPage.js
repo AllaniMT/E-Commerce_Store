@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { getProductById } from "../api/FetchApi";
-
-export default class ProductPage extends Component {
+import { connect } from "react-redux";
+import { addToCart } from "../store/actions/actions";
+class ProductPage extends Component {
   state = {
     product: {},
     loading: true,
@@ -25,6 +26,9 @@ export default class ProductPage extends Component {
         quantity: value,
       });
     }
+  };
+  addToCart = (product) => {
+    this.props.addToCart(product, this.state.quantity);
   };
   render() {
     if (this.state.loading) {
@@ -53,10 +57,23 @@ export default class ProductPage extends Component {
             <br />
             <br />
             <p>Total: {quantity * product.price}</p>
-            <button className="btn btn-primary">Add to Cart</button>
+            <button
+              className="btn btn-primary"
+              onClick={() => this.addToCart(product)}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
     );
   }
 }
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addToCart: (productsInfo, quantity) =>
+      dispatch(addToCart(productsInfo, quantity)),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(ProductPage);
