@@ -36,6 +36,7 @@ class ProductPage extends Component {
     }
     const { product } = this.state;
     const { quantity } = this.state;
+    
 
     return (
       <div>
@@ -71,9 +72,9 @@ class ProductPage extends Component {
 }
 const mapDispatchToProps = (dispatch) => {
   return {
-    addToCart: (productsInfo, quantity) =>
-      dispatch(addToCart(productsInfo, quantity)),
+    addToCart: (productInfo, quantity) =>
+      dispatch(addToCart(productInfo, quantity)),
   };
 };
-
+//null as first parameter because we dont need state
 export default connect(null, mapDispatchToProps)(ProductPage);

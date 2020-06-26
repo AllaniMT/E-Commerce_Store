@@ -17,7 +17,7 @@ function CartIcon(props) {
 //chnoa data ili mest7a9ha ml centrale state
 const mapStateToProps = (state) => {
   return {
-    totalQuantity: state.cart.reduce((total, item) => total + item.quantity, 0),
+    totalQuantity: state.cart.reduce((total, item) => total + parseInt(item.quantity), 0),
   };
 };
 
