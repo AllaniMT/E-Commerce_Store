@@ -8,6 +8,7 @@ export function addToCart(productInfo, quantity) {
   };
 }
 
+//removeFromCart
 export function removeFromCart(index) {
   return {
     type: REMOVE_FROM_CART,

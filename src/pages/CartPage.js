@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import CartItem from "../components/CartItem";
-import { FetchAllProducts } from "../api/FetchApi";
 import { clearCart } from "../store/actions/actions";
 
 class CartPage extends Component {
@@ -17,7 +16,7 @@ class CartPage extends Component {
         <div className="row">
           {/** hier gibt es einen Fehler CatITem oder CartItems */}
           {this.props.cartItem.map((item, index) => (
-            <div className="col-3" key={item.product.id}>
+            <div className="col-3" key={index}>
               <CartItem item={item} index={index} />
             </div>
           ))}
